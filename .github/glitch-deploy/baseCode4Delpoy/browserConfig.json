@@ -1,0 +1,20 @@
+{
+  "appName": "Netscape",
+  "connection": {
+    "downlink": 10,
+    "downlinkMax": null,
+    "effectiveType": "4g",
+    "rtt": 50,
+    "type": "wifi"
+  },
+  "platform": "MacIntel",
+  "pluginsLength": 5,
+  "vendor": "Google Inc.",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.77",
+  "viewportHeight": 980,
+  "viewportWidth": 1230,
+  "deviceCategory": "desktop",
+  "screenHeight": 1080,
+  "screenWidth": 2560,
+  "weight": 0.0002086184004404255
+}
