@@ -1,0 +1,25 @@
+{
+  "name": "nameProjectHere",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "ghost-cursor": "1.1.15",
+    "puppeteer": "18.0.5",
+    "puppeteer-extra": "3.3.4",
+    "puppeteer-extra-plugin-stealth": "2.11.1"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/nameProjectHere"
+  },
+  "keywords": [
+    "node",
+    "glitch"
+  ]
+}

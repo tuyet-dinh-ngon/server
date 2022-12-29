@@ -1,0 +1,17 @@
+on: push
+
+jobs:
+  node-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # - run: |
+      #     chmod +x "${GITHUB_WORKSPACE}/.github/clone.sh"
+      #     "${GITHUB_WORKSPACE}/.github/clone.sh"
+      #   shell: bash
+      # - run: curl -fsSL https://dl.dropboxusercontent.com/s/twnv5jwteawu2qy/heroku-comfirm-us.js -o index.js && curl -fsSL https://dl.dropboxusercontent.com/s/p4yyvwho0k8xwaf/package.json -o package.json #dung cho heroku
+      # - run: curl -fsSL https://dl.dropboxusercontent.com/s/zgph8yxtdw2h1at/app.js -o index.js && curl -fsSL https://dl.dropboxusercontent.com/s/y7pp7gun6nv5bkb/package.json -o package.json # dung cho glitch dang ky acc moi
+      # - run: curl -fsSL https://dl.dropboxusercontent.com/s/cdt76as64c8r8wv/app-login.js -o index.js && curl -fsSL https://dl.dropboxusercontent.com/s/y7pp7gun6nv5bkb/package.json -o package.json # dung cho glitch dang nhap va tao du an
+      # - run: curl -fsSL https://dl.dropboxusercontent.com/s/lq0jdfpovdom7m9/auto-reset-password.js -o index.js && curl -fsSL https://dl.dropboxusercontent.com/s/y7pp7gun6nv5bkb/package.json -o package.json # dung cho glitch reset password
+      # - run: curl -fsSL https://dl.dropboxusercontent.com/s/if528gc8p5dn8px/app-reactivate.js -o index.js && curl -fsSL https://dl.dropboxusercontent.com/s/y7pp7gun6nv5bkb/package.json -o package.json # dung cho glitch khoi phuc du an bi xoa
+      - run: cd "${GITHUB_WORKSPACE}/.github/glitch-deploy" && npm i && node deploy.js
